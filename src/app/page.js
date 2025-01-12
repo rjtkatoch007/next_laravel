@@ -1,7 +1,15 @@
 import Image from "next/image";
+import TopNav from "./components/Header/TopNav/TopNav";
+import Menu from "./components/Header/Menu/Menu";
 
 export default function Home() {
   return (
-   <h1 className="bg-blue-500 text-white 2xl p-2 inline-block m-2">Jay Shree Ram!</h1>
+   <div className="overflow-x-hidden">
+    <header id="header">
+      <TopNav/>
+      <Menu/>
+    </header>
+
+   </div>
   );
 }
